@@ -14,8 +14,8 @@ sigma_w = 0.1
 sigma_v = 1
 
 #sketching parameter
-tau = 0.1
-mu = 0.001
+tau = 1
+mu = 0.0001
 
 # predicted_theta0
 m0 = np.zeros((p,1))
@@ -35,6 +35,7 @@ R = noise_cov(D)
 
 
 MSE = []
+len_s_set = []
 for i in range(N):
     begin = time()
     w = noise_generation(p, sigma_w, Q)
@@ -53,6 +54,7 @@ for i in range(N):
 
     # data reduction
     y_AC, X_AC, R_AC, len_s = AC_sketching(theta, y, X, R, tau, mu)
+    len_s_set.append(len_s)
 
     # S = build_s(d,D)
     # X_sk = np.dot(S, X)
@@ -68,4 +70,5 @@ for i in range(N):
     # print('kalman_filiter processed finished, need total {}s'.format(kf_end-kf_begin))
 
 (sum(MSE)/N)**0.5
+np.mean(len_s)
 

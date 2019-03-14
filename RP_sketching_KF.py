@@ -10,11 +10,11 @@ from time import time
 N = 100
 D = 1024
 p = 50
-sigma_w = 0.01
+sigma_w = 0.1
 sigma_v = 1
 
 #sketching size
-d = 250
+d = 530
 
 # predicted_theta0
 m0 = np.zeros((p,1))
@@ -29,12 +29,14 @@ P_predict = 0.04*np.identity(p)
 # dynamic system
 F = state_transition_matrix(p)
 theta = initial_state(p)
+Q = noise_cov(p)
+R = noise_cov(D)
 
 MSE = []
 for i in range(N):
     begin = time()
-    w, Q = noise_generation(p, sigma_w)
-    v, R = noise_generation(D, sigma_v)
+    w = noise_generation(p, sigma_w, Q)
+    v= noise_generation(D, sigma_v, R)
     theta = np.dot(F, theta) + w
     X = random_sample(p, D)
     y = np.dot(X, theta) + v
@@ -62,6 +64,8 @@ for i in range(N):
     print('relative estimation error is {}'.format(per_RSME(Theta_predict, theta)))
     # print('relative estimation error is {}'.format(relative_error(Theta_predict, theta, X, y)))
     # print('kalman_filiter processed finished, need total {}s'.format(kf_end-kf_begin))
+
+(sum(MSE)/N)**0.5
 
 
 

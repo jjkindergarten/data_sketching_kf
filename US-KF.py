@@ -3,26 +3,24 @@ from kalman_filter import *
 from utilis import *
 from sketching import *
 import numpy as np
-from utilis import *
 from time import time
 from numpy.linalg import norm
 
 # some dimension setting
 N = 100
-D = 1024
+D = 1000
 p = 50
-sigma_w = 0.01
+sigma_w = 0.1
 sigma_v = 1
 
 #sketching parameter
-k = 1
-tau = 0.01
+tau = 2000
 
 # predicted_theta0
 m0 = np.zeros((p,1))
 m0[0] = 20
 m0[4] = -30
-Theta_predict = m0
+theta_predict = m0
 
 # predicted_initial_theta_covariance_matrix
 P_predict = 0.04*np.identity(p)
@@ -31,34 +29,49 @@ P_predict = 0.04*np.identity(p)
 # dynamic system
 F = state_transition_matrix(p)
 theta = initial_state(p)
+Q = noise_cov(p)
+R = noise_cov(D)
 
 MSE = []
-for i in range(N):
+d_set = []
+for t in range(N):
     begin = time()
-    w, Q = noise_generation(p, sigma_w)
-    v, R = noise_generation(D, sigma_v)
+    w = noise_generation(p, sigma_w, Q)
+    v = noise_generation(D, sigma_v, R)
     theta = np.dot(F, theta) + w
     X = random_sample(p, D)
     y = np.dot(X, theta) + v
     end = time()
 
     # prediction step
-    Theta_predict, P_predict = kf_predict(Theta_predict, P_predict, F, Q)
+    theta_predict, P_predict = kf_predict(theta_predict, P_predict, F, Q)
 
     # Correction Step
+    d = 0
+
     for i in range(D):
-        true_gamma = 1/p*norm(X[i:,])**2*np.trace(P_predict)
+        true_gamma = np.dot(X[i, :], np.dot(P_predict, X[i,:]))
         s = generate_s(X[i, :], P_predict, R[i,i])
-        k_n = generate_kn(P_predict, X[i,:], s)
-        e = error(y[i], X[i, :], Theta_predict)
-        e_line = e * s**-0.5
-        D_pp = 0.5 * e_line **2 * (2 * true_gamma + (true_gamma/sigma_v[i,i])**2) * 1/s
+        k_n = generate_kn(P_predict, X[i].reshape((-1,1)), s)
+        k_n = k_n.reshape((-1, 1))
+        e = error(y[i,0], X[i], theta_predict)[0]
+        e_line = e * s**(-0.5)
+        D_pp = 0.5 * e_line **2 * (2 * true_gamma + (true_gamma**2)/R[i,i]) * 1/s
 
         #update theta and P
-        if D_pp >= tau /i:
-            Theta_predict = Theta_predict + k_n*e
-            P_predict = update_predict_p(P_predict, X[i,:], s)
+        if D_pp >= tau /(i+1):
+            d = d+1
+            theta_predict = theta_predict + k_n*e
+            P_predict = update_predict_p(P_predict, X[i].reshape((-1, 1)), s)
         else:
-            mu = generate_mu(X[i,:], true_gamma, R[i,i])
-            Theta_predict = Theta_predict + mu*X[:,i]*e
+            mu = generate_mu(X[i].reshape((-1, 1)), true_gamma, R[i,i])
+            theta_predict = theta_predict + mu*X[i].reshape((-1, 1))*e
+    print(d)
+    d_set.append(d)
+
+    MSE.append(per_RSME(theta_predict, theta) ** 2)
+    print('relative estimation error is {}'.format(per_RSME(theta_predict, theta)))
+
+print((sum(MSE)/N)**0.5)
+print(np.mean(d_set))
 

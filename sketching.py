@@ -89,11 +89,11 @@ def error(y_i, x_i, theta):
 
 def generate_kn(P, x, s):
     import numpy as np
-    return np.dit(P, x) * 1/s
+    return np.dot(P, x) * 1/s
 
 def generate_s(x_i, P, sigma):
     import numpy as np
-    return np.dot(x_i.T, np.dot(P, x_i)) + sigma**2
+    return np.dot(x_i, np.dot(P, x_i)) + sigma**2
 
 def update_predict_p(P, x_i, s):
     import numpy as np
