@@ -5,26 +5,33 @@ from kalman_filter import *
 from utilis import *
 import numpy as np
 from time import time
+from sketching import rs_sketching
 
-def full_kf_mse(N, D, p, Q, R, F, theta, theta_predict, P_predict, mute_print = False):
+def rs_kf_mse(N, D, p, Q, R, F, theta, theta_predict, P_predict, d, mute_print = False):
     MSE = []
     for i in range(N):
         begin = time()
-        w = noise_generation(p,  Q)
-        v = noise_generation(D,  R)
+        w = noise_generation(p, Q)
+        v = noise_generation(D, R)
         theta = np.dot(F, theta) + w
         X = random_sample(p, D)
         y = np.dot(X, theta) + v
         end = time()
         # print('time slot {} has passed, need total {}s'.format(i, end-begin))
 
+
+
     # full dimension kalman filter
     # for i in range(N):
         kf_begin = time()
         # prediction step
         theta_predict, P_predict = kf_predict(theta_predict, P_predict, F, Q)
+
+        # data reduction
+        X_rs, y_rs, R_rs = rs_sketching(X, y, R, d)
+
         # correlation step
-        theta_predict, P_predict = kf_update(theta_predict, P_predict, y, X, R)
+        theta_predict, P_predict = kf_update(theta_predict, P_predict, y_rs, X_rs, R_rs)
         kf_end = time()
         MSE.append(per_RSME(theta_predict, theta)**2)
         if mute_print == False:
@@ -42,6 +49,9 @@ if __name__ == "__main__":
     sigma_w = 0.01
     sigma_v = 1
 
+    # sketching
+    d = 50
+
     # predicted_theta0
     m0 = np.zeros((p, 1))
     m0[0] = 20
@@ -57,4 +67,4 @@ if __name__ == "__main__":
     Q = noise_cov(p) * sigma_w ** 2
     R = noise_cov(D) * sigma_v ** 2
 
-    full_kf_mse(N, D, p, Q, R, F, theta, theta_predict, P_predict)
+    rs_kf_mse(N, D, p, Q, R, F, theta, theta_predict, P_predict, d)

@@ -3,14 +3,14 @@
 def state_transition_matrix(p):
     import numpy as np
     F = np.zeros((p,p))
-    F[(p-1),0] = 1
+    F[p-1,0] = 1
     for i in range(p-1):
        F[i,i+1] = 1
     return F
 
-def noise_generation(p, sigma, cov):
+def noise_generation(p, cov):
     import numpy as np
-    normal_var = cov * sigma**2
+    normal_var = cov
     w = np.random.multivariate_normal(mean= np.zeros((p)), cov = normal_var)
     return w.reshape((p,1))
 

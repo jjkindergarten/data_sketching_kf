@@ -46,6 +46,21 @@ def fjl_sketching(X, y, R, d):
 
     return X_hat, y_hat, R_hat
 
+def rs_sketching(X, y, R, d):
+    import numpy as np
+    from scipy.linalg import hadamard
+    D = X.shape[0]
+
+
+    S = generate_s_d(D, d)
+
+    X_hat = np.dot(S, X)
+    y_hat = np.dot(S, y)
+    R_hat = np.dot(S, np.dot(R, S.T))
+
+    return X_hat, y_hat, R_hat
+
+
 def build_s(row_k, ncol):
     import numpy as np
     from numpy.random import randint

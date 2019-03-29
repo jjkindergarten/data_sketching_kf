@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76e1359b-5fd0-48be-8321-66dc894b91e6" name="Default Changelist" comment="" />
+    <list default="true" id="76e1359b-5fd0-48be-8321-66dc894b91e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RS_KF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/US_KF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AC_sketching_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/AC_sketching_KF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RP_sketching_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/RP_sketching_KF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RS-KF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/US-KF.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/full_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/full_KF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grah.py" beforeDir="false" afterPath="$PROJECT_DIR$/grah.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kalman_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/kalman_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketching.py" beforeDir="false" afterPath="$PROJECT_DIR$/sketching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synthetic_data_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/synthetic_data_generation.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,38 +26,40 @@
     <session id="-470360790">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="py" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="Python" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1749" />
-          <entry key="dummy" value="10" />
-          <entry key="py" value="8126" />
+          <entry key="Python Console" value="2222" />
+          <entry key="dummy" value="12" />
+          <entry key="py" value="11460" />
+          <entry key="txt" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="9875" />
+          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="Python" value="13682" />
         </counts>
       </usages-collector>
     </session>
@@ -54,22 +70,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/synthetic_data_generation.py">
+        <entry file="file://$PROJECT_DIR$/grah.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <marker date="1551946548004" expanded="true" signature="424:567" ph="..." />
-              </folding>
+            <state relative-caret-position="382">
+              <caret line="30" selection-start-line="30" selection-end-line="39" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kalman_filter.py">
+        <entry file="file://$PROJECT_DIR$/synthetic_data_generation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="495">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -77,8 +90,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/full_KF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="17" lean-forward="true" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="120">
+              <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
+              <folding>
+                <element signature="e#33#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RS_KF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="45" selection-start-line="45" selection-end-line="69" selection-end-column="67" />
               <folding>
                 <element signature="e#33#72#0" expanded="true" />
               </folding>
@@ -87,34 +112,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding>
-                <marker date="1551651797736" expanded="true" signature="92:97" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sketching.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-              <folding>
-                <marker date="1551948321490" expanded="true" signature="482:487" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AC_sketching_KF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="615">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -125,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RP_sketching_KF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="67" lean-forward="true" selection-end-line="67" />
+            <state relative-caret-position="82">
+              <caret line="47" selection-start-line="47" selection-end-line="72" selection-end-column="67" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -135,12 +136,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/US-KF.py">
+        <entry file="file://$PROJECT_DIR$/US_KF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="5" selection-start-line="32" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="623">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sketching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-809">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1552608999376" expanded="true" signature="482:487" ph="..." />
+                <marker date="1552608999376" expanded="true" signature="1219:1452" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,20 +166,32 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mu</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_init_.py" />
         <option value="$PROJECT_DIR$/utilis.py" />
         <option value="$PROJECT_DIR$/application.py" />
-        <option value="$PROJECT_DIR$/US-KF.py" />
         <option value="$PROJECT_DIR$/budgeted_kalman_smoother.py" />
+        <option value="$PROJECT_DIR$/sketching.py" />
+        <option value="$PROJECT_DIR$/grah.py" />
         <option value="$PROJECT_DIR$/kalman_filter.py" />
+        <option value="$PROJECT_DIR$/RS-KF.py" />
+        <option value="$PROJECT_DIR$/US-KF.py" />
+        <option value="$PROJECT_DIR$/US_KF.py" />
+        <option value="$PROJECT_DIR$/AC_sketching_KF.py" />
+        <option value="$PROJECT_DIR$/full_KF.py" />
         <option value="$PROJECT_DIR$/synthetic_data_generation.py" />
         <option value="$PROJECT_DIR$/RP_sketching_KF.py" />
-        <option value="$PROJECT_DIR$/sketching.py" />
-        <option value="$PROJECT_DIR$/full_KF.py" />
-        <option value="$PROJECT_DIR$/AC_sketching_KF.py" />
+        <option value="$PROJECT_DIR$/RS_KF.py" />
       </list>
     </option>
   </component>
@@ -178,11 +201,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="971" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -232,12 +256,20 @@
       <option name="presentableId" value="Default" />
       <updated>1551422546194</updated>
     </task>
+    <task id="LOCAL-00001" summary="other sketching method implemntation">
+      <created>1552607689730</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552607689730</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.26800978" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.2899878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50076103" side_tool="true" weight="0.26495728" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,11 +280,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,37 +300,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="other sketching method implemntation" />
+    <option name="LAST_COMMIT_MESSAGE" value="other sketching method implemntation" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_init_.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budgeted_kalman_smoother.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <marker date="1551940240915" expanded="true" signature="137:1078" ph="..." />
-            <marker date="1551940240915" expanded="true" signature="379:454" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/synthetic_data_generation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <marker date="1551946548004" expanded="true" signature="424:567" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kalman_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utilis.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -310,30 +318,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/budgeted_kalman_smoother.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kalman_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/US_KF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grah.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="30" selection-start-line="30" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/full_KF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="17" lean-forward="true" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="120">
+          <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
           <folding>
             <element signature="e#33#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/US-KF.py">
+    <entry file="file://$PROJECT_DIR$/synthetic_data_generation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="5" selection-start-line="32" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RP_sketching_KF.py">
+    <entry file="file://$PROJECT_DIR$/AC_sketching_KF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="67" lean-forward="true" selection-end-line="67" />
+        <state relative-caret-position="615">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -342,20 +375,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sketching.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="-809">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding>
-            <marker date="1551948321490" expanded="true" signature="482:487" ph="..." />
+            <marker date="1552608999376" expanded="true" signature="482:487" ph="..." />
+            <marker date="1552608999376" expanded="true" signature="1219:1452" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AC_sketching_KF.py">
+    <entry file="file://$PROJECT_DIR$/RP_sketching_KF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="82">
+          <caret line="47" selection-start-line="47" selection-end-line="72" selection-end-column="67" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RS_KF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="45" selection-start-line="45" selection-end-line="69" selection-end-column="67" />
+          <folding>
+            <element signature="e#33#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
