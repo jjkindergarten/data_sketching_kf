@@ -22,8 +22,6 @@ def spd_sys_approximate(A, k, l, Orthogonalization = False):
     Psi_Q = Psi @ Q
     U, T = qr(Psi_Q, mode='economic')
 
-
-
     X = inv(T) @ (U.T @ W)
 
     # X = solve_triangular(T, np.identity(k88
@@ -37,10 +35,13 @@ def spd_sys_approximate(A, k, l, Orthogonalization = False):
     U_spd = U_sys @ V
 
     D[D <0]=0
-    D = np.diag(D)
-    A = U_spd @ D @ U_spd.T
+    D_half = D**0.5
+    D_half = np.diag(D_half)
+    A_half = U_spd @ D_half
 
-    return A
+    # D_diag = np.diag(D)
+    # A_spd_approx = U_spd @ D_diag @ U_spd.T
+    return A_half
 
 def create_low_rank_matrix(size = (100, 100), rank = 10, symmetry = True):
     import numpy as np
