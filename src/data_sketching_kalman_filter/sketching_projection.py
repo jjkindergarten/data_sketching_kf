@@ -20,6 +20,14 @@ def clarkson_woodruff_transform(input_matrix, sketch_size, seed=None):
     S = cwt_matrix(sketch_size, input_matrix.shape[0], seed)
     return S.dot(input_matrix)
 
+def count_sketching(X, y, R, d):
+    S = cwt_matrix(d, X.shape[0])
+    S = S[S.getnnz(1) > 0]
+    S = S[:, S.getnnz(0) > 0]
+    R_s = S.dot(R).T
+    R_s = S.dot(R_s)
+    return  S.dot(X), S.dot(y), R_s
+
 def sketching_projection(x, A, b, s_size):
     S = cwt_matrix(s_size, A.shape[0])
     A_s = S.dot(A)
