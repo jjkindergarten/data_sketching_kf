@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e1359b-5fd0-48be-8321-66dc894b91e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/full_KF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kalman Filter Trading/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_ekf/ekf_with_lwr_model/EKF.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/AC_sketching_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/AC_sketching_KF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/CoutingSketch_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/CoutingSketch_KF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/Data Sketching Kalman Filter Comparasion.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/Data Sketching Kalman Filter Comparasion.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/RP_sketching_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/RP_sketching_KF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/RS_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/RS_KF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/US_KF.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/US_KF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/budgeted_kalman_smoother.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/full_KF.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/kalman_filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/low_rank_approximation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/low_rank_approximation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/sketching.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/sketching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/sketching_projection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/sketching_projection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/synthetic_data_generation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/synthetic_data_generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_sketching_kalman_filter/utilis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_sketching_kalman_filter/shared/utilis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +33,7 @@
     <session id="-470360790">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.11" value="2" />
@@ -62,15 +45,15 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="5" />
           <entry key="m" value="44" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="1" />
           <entry key="py" value="126" />
           <entry key="txt" value="1" />
@@ -80,7 +63,7 @@
         <counts>
           <entry key="IPNB" value="5" />
           <entry key="Image" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="Mathematica" value="44" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="126" />
@@ -91,14 +74,16 @@
           <entry key="Python Console" value="11201" />
           <entry key="dummy" value="28" />
           <entry key="m" value="2" />
+          <entry key="md" value="584" />
           <entry key="py" value="21894" />
-          <entry key="txt" value="185" />
+          <entry key="txt" value="222" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="584" />
           <entry key="Mathematica" value="2" />
-          <entry key="PLAIN_TEXT" value="213" />
+          <entry key="PLAIN_TEXT" value="250" />
           <entry key="Python" value="33095" />
         </counts>
       </usages-collector>
@@ -109,14 +94,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data_sketching_kalman_filter/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="230" selection-end-column="10" />
+            <state relative-caret-position="720">
+              <caret line="225" selection-start-line="225" selection-end-line="230" selection-end-column="10" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -187,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/RS_KF.py" />
         <option value="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter/US_KF.py" />
         <option value="$PROJECT_DIR$/src/data_sketching_kalman_filter/Data Sketching Kalman Filter Comparasion.ipynb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -206,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +226,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,6 +243,116 @@
       <recent name="$PROJECT_DIR$/src/data_sketching_kalman_filter/kalman_filter" />
       <recent name="$PROJECT_DIR$/src/data_sketching_kalman_filter" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -324,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557180380335</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="notebook update">
+      <created>1557649914087</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557649914088</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -340,12 +455,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="662" y="164" width="356" height="721" id="Project" order="0" sideWeight="0.4980494" visible="true" weight="0.25213677" />
+      <window_info active="true" content_ui="combo" x="662" y="164" width="356" height="721" id="Project" order="0" sideWeight="0.4980494" visible="true" weight="0.25518927" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24969475" />
       <window_info id="Favorites" order="2" sideWeight="0.50195056" side_tool="true" weight="0.21726191" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,14 +539,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="other sketching method implemntation" />
-    <MESSAGE value="notebook update" />
     <MESSAGE value="try low rank approx to speed up alg" />
     <MESSAGE value="sketch &amp; projection" />
     <MESSAGE value="should be fast enough for kalman filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="should be fast enough for kalman filter" />
+    <MESSAGE value="notebook update" />
+    <option name="LAST_COMMIT_MESSAGE" value="notebook update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data_sketching_ekf/reference_code/traffic-hybrid-estimation-master/s2m.m" />
     <entry file="file://$PROJECT_DIR$/src/data_sketching_ekf/reference_code/traffic-hybrid-estimation-master/KFaprioriMode.m" />
     <entry file="file://$PROJECT_DIR$/src/data_sketching_ekf/reference_code/traffic-hybrid-estimation-master/KFaposteriori.m" />
     <entry file="file://$PROJECT_DIR$/src/data_sketching_ekf/reference_code/traffic-hybrid-estimation-master/findRep.m" />
@@ -617,11 +731,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data_sketching_kalman_filter/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="230" selection-end-column="10" />
+        <state relative-caret-position="720">
+          <caret line="225" selection-start-line="225" selection-end-line="230" selection-end-column="10" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
